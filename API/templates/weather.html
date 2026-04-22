@@ -1,0 +1,13 @@
+<h1>hourly weather forecast</h1>
+<table border="1" collspacing="8">
+    <tr>
+        <th>time</th>
+        <th>temperature</th>
+    </tr>
+    {% for data in weather_list %}
+    <tr>
+        <td>{{data.time}}</td>
+        <td>{{data.temperature}}</td>
+    </tr>
+    {% endfor %}
+</table>
